@@ -1,0 +1,1411 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>สวนส้มโอคุณแม่นฤดี | ส้มโอทับทิมสยาม</title>
+
+<meta name="description"
+content="สวนส้มโอคุณแม่นฤดี จำหน่ายส้มโอทับทิมสยามคุณภาพดี สดจากสวน คัดพิเศษ พร้อมบริการจัดส่ง">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --green:#245c3a;
+    --green-dark:#123c27;
+    --green-light:#6e9f65;
+    --red:#a52d3a;
+    --red-dark:#7d1d29;
+    --gold:#d9a441;
+    --cream:#fffaf0;
+    --white:#ffffff;
+    --text:#243229;
+    --gray:#66736b;
+}
+
+body{
+    font-family:"Prompt",sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(12px);
+    box-shadow:0 2px 20px rgba(0,0,0,.08);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:var(--green-dark);
+}
+
+.logo-icon{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--green),var(--green-light));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+
+.logo-text{
+    font-family:"Kanit";
+    font-size:20px;
+    font-weight:600;
+}
+
+.logo-text span{
+    display:block;
+    color:var(--red);
+    font-size:12px;
+    font-weight:400;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:var(--text);
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--red);
+}
+
+.menu-btn{
+    display:none;
+    border:0;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    padding-top:76px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(90deg,
+        rgba(11,48,30,.93) 0%,
+        rgba(20,65,40,.78) 45%,
+        rgba(20,65,40,.25) 100%),
+    url("https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:70px 25px;
+    color:white;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:50px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:"Kanit";
+    font-size:clamp(42px,6vw,78px);
+    line-height:1.15;
+    max-width:750px;
+}
+
+.hero h1 span{
+    color:#ffcc62;
+}
+
+.hero p{
+    max-width:650px;
+    margin:25px 0;
+    font-size:18px;
+    color:#f3f6f2;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:13px 26px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:500;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--red);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:var(--red-dark);
+    transform:translateY(-2px);
+}
+
+.btn-light{
+    background:white;
+    color:var(--green-dark);
+}
+
+.btn-light:hover{
+    transform:translateY(-2px);
+}
+
+/* ================= GENERAL ================= */
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title small{
+    color:var(--red);
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.section-title h2{
+    font-family:"Kanit";
+    font-size:42px;
+    color:var(--green-dark);
+    margin-top:5px;
+}
+
+.section-title p{
+    color:var(--gray);
+    max-width:650px;
+    margin:10px auto;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.about-image{
+    min-height:430px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(20,70,40,.1),rgba(20,70,40,.1)),
+    url("https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=1000&q=85");
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.about-text h3{
+    font-family:"Kanit";
+    color:var(--green);
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    color:var(--gray);
+    margin-bottom:15px;
+}
+
+.info-list{
+    list-style:none;
+    margin-top:25px;
+}
+
+.info-list li{
+    margin:12px 0;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.info-list span{
+    color:var(--red);
+    font-size:20px;
+}
+
+/* ================= POMELO ================= */
+
+.pomelo{
+    background:#f5f1e5;
+}
+
+.pomelo-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    padding:35px 28px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-icon{
+    width:75px;
+    height:75px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#f7e7dc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+}
+
+.feature-card h3{
+    font-family:"Kanit";
+    color:var(--green);
+    margin-bottom:8px;
+}
+
+.feature-card p{
+    color:var(--gray);
+}
+
+/* ================= PRODUCTS ================= */
+
+.products{
+    background:white;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.product-card{
+    overflow:hidden;
+    border-radius:25px;
+    background:#fff;
+    border:1px solid #eee;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+}
+
+.product-image{
+    height:250px;
+    background-size:cover;
+    background-position:center;
+}
+
+.img1{
+    background-image:url("https://images.unsplash.com/photo-1582281298055-e25b84a30b0b?auto=format&fit=crop&w=900&q=85");
+}
+
+.img2{
+    background-image:url("https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=900&q=85");
+}
+
+.img3{
+    background-image:url("https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=900&q=85");
+}
+
+.product-info{
+    padding:25px;
+}
+
+.product-info h3{
+    font-family:"Kanit";
+    font-size:24px;
+    color:var(--green-dark);
+}
+
+.product-info p{
+    color:var(--gray);
+    font-size:14px;
+    margin:7px 0 15px;
+}
+
+.price{
+    color:var(--red);
+    font-size:23px;
+    font-weight:700;
+}
+
+/* ================= PROCESS ================= */
+
+.process{
+    background:var(--green-dark);
+    color:white;
+}
+
+.process .section-title h2{
+    color:white;
+}
+
+.process .section-title p{
+    color:#d8e3dc;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.process-card{
+    text-align:center;
+    padding:25px 15px;
+    position:relative;
+}
+
+.number{
+    width:55px;
+    height:55px;
+    margin:auto;
+    border-radius:50%;
+    background:var(--gold);
+    color:var(--green-dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.process-card h3{
+    font-family:"Kanit";
+    margin-bottom:8px;
+}
+
+.process-card p{
+    color:#cbd8d0;
+    font-size:14px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+    background:#f8f5ec;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    grid-template-rows:230px 230px;
+    gap:15px;
+}
+
+.gallery-item{
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+}
+
+.gallery-item:nth-child(1){
+    grid-row:span 2;
+    background-image:url("https://images.unsplash.com/photo-1595587637401-83ff6b6bdb1f?auto=format&fit=crop&w=1000&q=85");
+}
+
+.gallery-item:nth-child(2){
+    background-image:url("https://images.unsplash.com/photo-1603052875515-5c3d7c2f5b1f?auto=format&fit=crop&w=700&q=85");
+}
+
+.gallery-item:nth-child(3){
+    background-image:url("https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=700&q=85");
+}
+
+.gallery-item:nth-child(4){
+    background-image:url("https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=700&q=85");
+}
+
+.gallery-item:nth-child(5){
+    background-image:url("https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&w=700&q=85");
+}
+
+/* ================= ORDER ================= */
+
+.order{
+    background:white;
+}
+
+.order-box{
+    background:
+    linear-gradient(135deg,rgba(24,81,48,.96),rgba(70,117,72,.94));
+    border-radius:35px;
+    padding:60px 40px;
+    text-align:center;
+    color:white;
+}
+
+.order-box h2{
+    font-family:"Kanit";
+    font-size:42px;
+}
+
+.order-box p{
+    max-width:650px;
+    margin:12px auto 25px;
+    color:#e9f1eb;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#f5f1e5;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-card{
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.contact-card h3{
+    font-family:"Kanit";
+    color:var(--green);
+    font-size:27px;
+    margin-bottom:20px;
+}
+
+.contact-item{
+    display:flex;
+    gap:15px;
+    margin:18px 0;
+}
+
+.contact-icon{
+    width:45px;
+    height:45px;
+    border-radius:12px;
+    background:#eaf2e9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+.contact-item strong{
+    display:block;
+}
+
+.contact-item span{
+    color:var(--gray);
+    font-size:14px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#102d1e;
+    color:white;
+    padding:50px 20px 25px;
+}
+
+.footer-grid{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-logo{
+    font-family:"Kanit";
+    font-size:25px;
+}
+
+.footer-grid h4{
+    margin-bottom:15px;
+    color:#f1c866;
+}
+
+.footer-grid ul{
+    list-style:none;
+}
+
+.footer-grid li{
+    margin:8px 0;
+    color:#c9d5cd;
+}
+
+.footer-grid a{
+    color:#c9d5cd;
+    text-decoration:none;
+}
+
+.copyright{
+    max-width:1150px;
+    margin:40px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    color:#9caea2;
+    font-size:13px;
+}
+
+/* ================= FLOATING LINE ================= */
+
+.line-btn{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    z-index:1000;
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:#06c755;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.line-btn:hover{
+    transform:scale(1.08);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:76px;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        padding:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pomelo-grid,
+    .product-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:70px 16px;
+    }
+
+    .hero-content{
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .pomelo-grid,
+    .product-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-image{
+        min-height:300px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:200px 200px 200px;
+    }
+
+    .gallery-item:nth-child(1){
+        grid-column:span 2;
+        grid-row:auto;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<a href="#home" class="logo">
+
+<div class="logo-icon">🍊</div>
+
+<div class="logo-text">
+สวนส้มโอคุณแม่นฤดี
+<span>สวนส้มโอทับทิมสยาม</span>
+</div>
+
+</a>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">หน้าแรก</a></li>
+<li><a href="#about">เรื่องราวของสวน</a></li>
+<li><a href="#pomelo">ส้มโอทับทิมสยาม</a></li>
+<li><a href="#products">สินค้า</a></li>
+<li><a href="#gallery">แกลเลอรี</a></li>
+<li><a href="#contact">ติดต่อเรา</a></li>
+
+</ul>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">🍊 สดจากสวน • คัดพิเศษ • ส่งตรงถึงบ้าน</div>
+
+<h1>
+ความหวานจากสวน<br>
+สู่บ้านคุณด้วย<br>
+<span>ส้มโอทับทิมสยาม</span>
+</h1>
+
+<p>
+สวนส้มโอคุณแม่นฤดี
+ตั้งใจคัดสรรส้มโอทับทิมสยามคุณภาพดี
+ดูแลด้วยความใส่ใจตั้งแต่ต้นจนถึงมือลูกค้า
+เพื่อให้ทุกคำเต็มไปด้วยความหวาน หอม และความสดใหม่
+</p>
+
+<div class="buttons">
+
+<a href="#products" class="btn btn-primary">
+🛒 ดูสินค้า
+</a>
+
+<a href="#contact" class="btn btn-light">
+📞 ติดต่อสวน
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>OUR STORY</small>
+
+<h2>เรื่องราวของสวน</h2>
+
+<p>
+จากความรักในการทำสวน สู่ความตั้งใจในการส่งต่อผลไม้คุณภาพดีให้กับทุกครอบครัว
+</p>
+
+</div>
+
+<div class="about-grid">
+
+<div class="about-image"></div>
+
+<div class="about-text">
+
+<h3>สวนส้มโอคุณแม่นฤดี</h3>
+
+<p>
+เราใส่ใจทุกขั้นตอนตั้งแต่การดูแลต้นส้มโอ
+การบำรุงต้น การดูแลผล ไปจนถึงการคัดเลือกผลที่มีคุณภาพ
+ก่อนจัดส่งถึงมือลูกค้า
+</p>
+
+<p>
+หัวใจสำคัญของสวนคือ
+“ปลูกด้วยความใส่ใจ คัดด้วยความตั้งใจ และส่งมอบด้วยความจริงใจ”
+</p>
+
+<ul class="info-list">
+
+<li>
+<span>✓</span>
+คัดส้มโอคุณภาพก่อนจัดส่ง
+</li>
+
+<li>
+<span>✓</span>
+เน้นความสดใหม่จากสวน
+</li>
+
+<li>
+<span>✓</span>
+แพ็กสินค้าอย่างเหมาะสม
+</li>
+
+<li>
+<span>✓</span>
+บริการลูกค้าด้วยความจริงใจ
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= POMELO ================= -->
+
+<section class="pomelo" id="pomelo">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>WHY TABTIM SIAM</small>
+
+<h2>เสน่ห์ของส้มโอทับทิมสยาม</h2>
+
+<p>
+เอกลักษณ์ที่ทำให้ส้มโอพันธุ์นี้เป็นที่รู้จักและได้รับความนิยม
+</p>
+
+</div>
+
+<div class="pomelo-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">❤️</div>
+
+<h3>เนื้อสีทับทิม</h3>
+
+<p>
+เนื้อมีสีชมพูเข้มไปจนถึงแดง
+โดดเด่นและสวยงามเมื่อผ่าออก
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">🍯</div>
+
+<h3>หวานหอม</h3>
+
+<p>
+รสชาติหวานนุ่ม มีกลิ่นหอม
+เหมาะสำหรับรับประทานสด
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">✨</div>
+
+<h3>ผิวคล้ายกำมะหยี่</h3>
+
+<p>
+เปลือกมีลักษณะนุ่มคล้ายกำมะหยี่
+เป็นเอกลักษณ์ที่สังเกตได้ง่าย
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>OUR PRODUCTS</small>
+
+<h2>สินค้าแนะนำจากสวน</h2>
+
+<p>
+เลือกขนาดและรูปแบบที่ต้องการ แล้วติดต่อสวนเพื่อสอบถามราคาและรอบจัดส่งล่าสุด
+</p>
+
+</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<div class="product-image img1"></div>
+
+<div class="product-info">
+
+<h3>ส้มโอทับทิมสยาม</h3>
+
+<p>
+ผลสด คัดพิเศษ เหมาะสำหรับรับประทานเองหรือเป็นของฝาก
+</p>
+
+<div class="price">
+สอบถามราคา
+</div>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image img2"></div>
+
+<div class="product-info">
+
+<h3>ชุดของฝาก</h3>
+
+<p>
+จัดชุดสวยงาม เหมาะสำหรับมอบให้ผู้ใหญ่ เพื่อน หรือคนพิเศษ
+</p>
+
+<div class="price">
+สอบถามราคา
+</div>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image img3"></div>
+
+<div class="product-info">
+
+<h3>ส้มโอสำหรับสั่งจำนวนมาก</h3>
+
+<p>
+เหมาะสำหรับร้านค้า งานจัดเลี้ยง หรือผู้ที่ต้องการสั่งหลายผล
+</p>
+
+<div class="price">
+ติดต่อสวน
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section class="process">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>OUR PROCESS</small>
+
+<h2>จากสวนถึงมือคุณ</h2>
+
+<p>
+เราดูแลทุกขั้นตอนเพื่อให้ลูกค้าได้รับสินค้าอย่างดีที่สุด
+</p>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process-card">
+
+<div class="number">01</div>
+
+<h3>ดูแลสวน</h3>
+
+<p>
+ดูแลต้นและผลส้มโออย่างสม่ำเสมอ
+</p>
+
+</div>
+
+<div class="process-card">
+
+<div class="number">02</div>
+
+<h3>คัดคุณภาพ</h3>
+
+<p>
+เลือกผลที่มีคุณภาพตามมาตรฐานของสวน
+</p>
+
+</div>
+
+<div class="process-card">
+
+<div class="number">03</div>
+
+<h3>แพ็กสินค้า</h3>
+
+<p>
+เตรียมและแพ็กสินค้าอย่างเหมาะสม
+</p>
+
+</div>
+
+<div class="process-card">
+
+<div class="number">04</div>
+
+<h3>จัดส่ง</h3>
+
+<p>
+ส่งตรงจากสวนถึงมือลูกค้า
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery" id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>OUR GALLERY</small>
+
+<h2>บรรยากาศจากสวน</h2>
+
+<p>
+สัมผัสบรรยากาศและความสดใหม่ของผลผลิตจากสวน
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item"></div>
+
+<div class="gallery-item"></div>
+
+<div class="gallery-item"></div>
+
+<div class="gallery-item"></div>
+
+<div class="gallery-item"></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ORDER ================= -->
+
+<section class="order">
+
+<div class="container">
+
+<div class="order-box">
+
+<h2>อยากลองส้มโอจากสวนของเราไหม?</h2>
+
+<p>
+สอบถามสินค้า ขนาด ราคา รอบจัดส่ง
+หรือสั่งซื้อส้มโอทับทิมสยามได้โดยตรงกับสวน
+</p>
+
+<div class="buttons" style="justify-content:center;">
+
+<a href="#contact" class="btn btn-light">
+💬 สอบถามรายละเอียด
+</a>
+
+<a href="#" class="btn btn-primary">
+🛒 สั่งซื้อ
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>CONTACT US</small>
+
+<h2>ติดต่อสวนส้มโอคุณแม่นฤดี</h2>
+
+<p>
+ยินดีให้บริการและตอบคำถามเกี่ยวกับสินค้า
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>ช่องทางติดต่อ</h3>
+
+<div class="contact-item">
+
+<div class="contact-icon">📱</div>
+
+<div>
+<strong>โทรศัพท์</strong>
+<span>08X-XXX-XXXX</span>
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">💬</div>
+
+<div>
+<strong>LINE</strong>
+<span>@yourline</span>
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">📘</div>
+
+<div>
+<strong>Facebook</strong>
+<span>สวนส้มโอคุณแม่นฤดี</span>
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">📍</div>
+
+<div>
+<strong>ที่ตั้งสวน</strong>
+<span>ประเทศไทย</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>เวลาติดต่อ</h3>
+
+<div class="contact-item">
+
+<div class="contact-icon">🕘</div>
+
+<div>
+<strong>เปิดให้บริการ</strong>
+<span>ทุกวัน 08:00 - 18:00 น.</span>
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">🚚</div>
+
+<div>
+<strong>จัดส่งสินค้า</strong>
+<span>สอบถามรอบจัดส่งกับทางสวน</span>
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">🍊</div>
+
+<div>
+<strong>สอบถามสินค้า</strong>
+<span>สามารถติดต่อเพื่อเช็กสินค้าที่มีในช่วงนั้นได้</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-logo">
+🍊 สวนส้มโอคุณแม่นฤดี
+</div>
+
+<p style="color:#b8c8be;margin-top:12px;">
+ส้มโอทับทิมสยามคุณภาพดี
+คัดสรรจากสวนด้วยความใส่ใจ
+พร้อมส่งต่อความอร่อยถึงคุณ
+</p>
+
+</div>
+
+<div>
+
+<h4>เมนูเว็บไซต์</h4>
+
+<ul>
+
+<li><a href="#home">หน้าแรก</a></li>
+<li><a href="#about">เรื่องราวของสวน</a></li>
+<li><a href="#products">สินค้า</a></li>
+<li><a href="#gallery">แกลเลอรี</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>ติดต่อเรา</h4>
+
+<ul>
+
+<li>📱 08X-XXX-XXXX</li>
+<li>💬 LINE: @yourline</li>
+<li>📘 Facebook</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 สวนส้มโอคุณแม่นฤดี
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- ================= LINE BUTTON ================= -->
+
+<a href="#" class="line-btn" title="ติดต่อผ่าน LINE">
+💬
+</a>
+
+
+<script>
+
+function toggleMenu(){
+
+    const nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        document.getElementById("navLinks")
+        .classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
